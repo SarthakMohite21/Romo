@@ -1,0 +1,139 @@
+
+/* General Styling */
+.about-page {
+  background-color: #111; /* Consistent background across sections */
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #222;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff6600;
+  transition: width 0.3s ease-in-out;
+}
+
+.about-container {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+
+/* Life at Romo Section */
+.life-at-romo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.life-at-romo h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.life-at-romo h1 .orange {
+  color: #ff6600;
+}
+
+.life-at-romo p {
+  max-width: 800px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Leadership Section */
+.leadership {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.leadership h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.leadership h2 .orange {
+  color: #ff6600;
+}
+
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.leadership-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.leadership-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.footer {
+  padding: 10px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.footer .social-icons a {
+  color: #ff6600;
+  margin: 0 10px;
+  text-decoration: none;
+}
